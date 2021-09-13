@@ -1,4 +1,4 @@
-class UI {
+export class UI {
      constructor() {
           //h1
           this.locationWeather = document.querySelector("#w-location");

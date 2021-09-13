@@ -1,5 +1,5 @@
 //akharin location ron az toye local storage bekhoone
-class Storage {
+export class Storage {
      constructor(city) {
           this.default_city = "tehran";
           this.city = city;

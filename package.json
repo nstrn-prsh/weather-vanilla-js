@@ -1,0 +1,23 @@
+{
+  "name": "weather-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nstrn-prsh/weather-vanilla-js.git"
+  },
+  "author": "Nastaran Poursharif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nstrn-prsh/weather-vanilla-js/issues"
+  },
+  "homepage": "https://github.com/nstrn-prsh/weather-vanilla-js#readme",
+  "dependencies": {
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
