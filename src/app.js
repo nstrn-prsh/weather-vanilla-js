@@ -1,4 +1,8 @@
-let weatherData = new Weather("tehran");
+//variables
+let store = new Storage();
+let city = store.getCityInLocaleStorage();
+
+let weatherData = new Weather(`${store.city}`);
 let ui = new UI();
 
 //baraye inke findWeather() invoke beshe
@@ -17,6 +21,7 @@ function findWeather() {
           })
           .catch((error) => {
                console.log(error.message);
+               localStorage.clear();
           });
 }
 
@@ -29,4 +34,6 @@ function changeCity() {
 
      //inputo khali mikonim
      document.querySelector("#city").value = null;
+          //city ro set konim
+          store.setCityToLocalStorage(city);
 }
