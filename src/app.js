@@ -1,15 +1,15 @@
 let weatherData = new Weather("tehran");
+let ui = new UI();
 
-//immediately invoked function
+//iife
 (function () {
      weatherData
           .getWeather()
           .then((data) => {
-               console.log(data);
+               // console.log(data);
+               ui.setWeatherInfo(data);
           })
           .catch((error) => {
                console.log(error.message);
           });
-})();
-
-
+})()
